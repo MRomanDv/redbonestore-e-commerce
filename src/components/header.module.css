@@ -1,0 +1,36 @@
+
+.header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(255deg, rgba(186,40,12,1) 0%, rgba(187,62,41,1) 23%, rgba(26,25,25,1) 62%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header img {
+    width: 500px;
+    height: 500px; 
+    animation: opacity 8s ease-in  infinite;
+}
+.header h2 {
+    margin-top: 4rem;
+    color: rgb(206, 194, 194);
+    letter-spacing: 8px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+@keyframes opacity {
+    0%{
+        
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+
+    }
+}

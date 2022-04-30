@@ -1,0 +1,16 @@
+.card {
+    width: 200px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+.card img {
+    width: 100%;
+}
+.card p {
+    color: rgb(168, 28, 28);
+    font-family: 'Jura', sans-serif;
+    margin-top: 1rem;
+}
+a {
+    text-decoration: none;
+}

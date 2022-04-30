@@ -1,0 +1,47 @@
+.nav {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    color: rgb(223, 205, 205);
+    padding: 1rem 0;
+    background: rgb(34, 33, 33);
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    cursor: pointer;
+    font-family: 'Jura', sans-serif;
+}
+.links {
+  display: flex;
+}
+
+.links a {
+    text-decoration: none;
+    color:rgb(223, 205, 205) ;
+}
+.links li {
+    margin-right: 1rem;
+}
+
+.links:hover > .icon {
+    animation: icon 1.5s ease;
+}
+
+@keyframes icon {
+    0%{
+
+    }
+    50%{
+        color: rgb(192, 64, 64);
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
