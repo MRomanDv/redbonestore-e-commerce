@@ -10,35 +10,43 @@ import product8 from '../imgs/SUGA HOODIE.png'
 const arrayImgs = [
     {
         id:1,
-        img:product1
+        img:product1,
+        producto:'5sos'
     },
     {
         id:2,
-        img:product2
+        img:product2,
+        producto:'Adele'
     },
     {
         id:3,
-        img:product3
+        img:product3,
+        producto:'Jimin'
     },
     {
         id:4,
-        img:product4
+        img:product4,
+        producto:'Titán colosal'
     },
     {
         id:5,
-        img:product5
+        img:product5,
+        producto:'As it Was'
     },
     {
         id:6,
-        img:product6
+        img:product6,
+        producto:'Badgal'
     },
     {
         id:7,
-        img:product7
+        img:product7,
+        producto:'Miley'
     },
     {
         id:8,
-        img:product8
+        img:product8,
+        producto:'Suga'
     }
 ]
 

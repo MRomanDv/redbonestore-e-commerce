@@ -7,6 +7,7 @@ function ProductCard(props){
         
         <div className={classes.card}>
             <img src={props.productimg} alt="" />
+            <h3>{props.producto}</h3>
             <p>Ordenar</p>
         </div>
         

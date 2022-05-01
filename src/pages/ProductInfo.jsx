@@ -8,14 +8,22 @@ import arrayImgs from '../data/data'
 
 function ProductInfo(){
     const [newImage, setNewImage] = useState()
+    const [productName, setProductName] = useState('') 
     let params = useParams()
 
-     function fetchImage(){
+      function fetchImage(){
          arrayImgs.filter((imagen, i) => imagen.id == params.name && setNewImage(imagen.img))
      }
 
+
+     function name() {
+        arrayImgs.filter((imagen, i) => imagen.id == params.name && setProductName(imagen.producto))
+     }
+     console.log(productName)
+
     useEffect(()=>{
         fetchImage()
+        name()
     },[params.name])
 
 
@@ -26,9 +34,10 @@ function ProductInfo(){
             <div className={classes.infocontainer}>
 
                 <div className={classes.image}>
-                    <img src={newImage} alt="" />
+                    <img  src={newImage} alt="" />
                 </div>
                 <div className={classes.info}>
+
                 <form action="">
                         <div className={classes.inputbox}>
                             <p>Selecciona el Color de tu prenda</p>
@@ -77,6 +86,17 @@ function ProductInfo(){
                             <input type="radio" id="XL" name="talla" value="XL" />
                             <label htmlFor="XL">XL</label>
                         </div>
+                        </div>
+
+                        <div className={classes.inputbox}>
+                            <p>Diseño</p>
+                            <div className={classes.box}>
+                            <input type="text" id="diseño" name="diseño" value={productName} readOnly />
+                            </div>
+                        </div>
+
+                        <div>
+                            <input type="submit" className={classes.button} value="Añadir a carrito de compras" />
                         </div>
     
                         </form>

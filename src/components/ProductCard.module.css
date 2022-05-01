@@ -6,7 +6,8 @@
 .card img {
     width: 100%;
 }
-.card p {
+.card p,
+.card h3 {
     color: rgb(168, 28, 28);
     font-family: 'Jura', sans-serif;
     margin-top: 1rem;

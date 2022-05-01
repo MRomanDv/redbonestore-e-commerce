@@ -19,7 +19,7 @@ function Product(){
                 {arrayImgs.map(obj => {
                     return (
                         <NavLink to={`/product-info/${obj.id}`}> 
-                        <ProductCard key={obj.id} productimg={obj.img} id={obj.id} />
+                        <ProductCard key={obj.id} productimg={obj.img} id={obj.id} producto={obj.producto} />
                         </NavLink>
                     )
                 })}

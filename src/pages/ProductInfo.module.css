@@ -51,3 +51,16 @@
 .box label {
     margin-left: .5rem;
 }
+
+.button {
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgb(31, 28, 28);
+    color: rgb(214, 186, 186);
+    transition: 500ms ease-in;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgb(161, 42, 42);
+}
