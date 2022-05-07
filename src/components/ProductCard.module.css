@@ -2,9 +2,11 @@
     width: 200px;
     margin-bottom: 100px;
     cursor: pointer;
+    
 }
 .card img {
     width: 100%;
+    border-radius: 10px;
 }
 .card p,
 .card h3 {

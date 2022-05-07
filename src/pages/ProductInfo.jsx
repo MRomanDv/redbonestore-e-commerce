@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar'
 import classes from './ProductInfo.module.css'
 import { useParams } from 'react-router-dom'
 import arrayImgs from '../data/data'
+import Footer from '../components/footer/Footer'
 
 
 function ProductInfo(){
@@ -19,7 +20,7 @@ function ProductInfo(){
      function name() {
         arrayImgs.filter((imagen, i) => imagen.id == params.name && setProductName(imagen.producto))
      }
-     console.log(productName)
+    
 
     useEffect(()=>{
         fetchImage()
@@ -94,6 +95,7 @@ function ProductInfo(){
                             <input type="text" id="diseño" name="diseño" value={productName} readOnly />
                             </div>
                         </div>
+                        
 
                         <div>
                             <input type="submit" className={classes.button} value="Añadir a carrito de compras" />
@@ -102,6 +104,7 @@ function ProductInfo(){
                         </form>
                 </div>
             </div>
+            <Footer />
         </div>      
     )
 }

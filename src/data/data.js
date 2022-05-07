@@ -6,6 +6,10 @@ import product5 from '../imgs/ASITWASINSTA.png'
 import product6 from '../imgs/BADGAL HOODIE.png'
 import product7 from '../imgs/MILEY 2 HOODIE.png'
 import product8 from '../imgs/SUGA HOODIE.png'
+import gaga from '../imgs/gaga.png'
+import bsb from '../imgs/BSB.png' 
+
+
 
 const arrayImgs = [
     {
@@ -36,7 +40,8 @@ const arrayImgs = [
     {
         id:6,
         img:product6,
-        producto:'Badgal'
+        producto:'Badgal',
+        tag:'nuevo-lanzamiento'
     },
     {
         id:7,
@@ -47,7 +52,21 @@ const arrayImgs = [
         id:8,
         img:product8,
         producto:'Suga'
+    },
+    {
+        id:9,
+        img:gaga,
+        producto:'Gaga',
+        tag:'nuevo-lanzamiento'
+    },
+    {
+        id:10,
+        img:bsb,
+        producto:'Backstreet B',
+        tag:'nuevo-lanzamiento'
     }
 ]
 
+
 export default arrayImgs
+

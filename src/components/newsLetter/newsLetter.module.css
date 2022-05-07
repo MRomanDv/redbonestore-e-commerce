@@ -1,0 +1,45 @@
+.background {
+    background: linear-gradient(68deg, rgba(186,40,12,1) 0%, rgba(187,62,41,1) 51%, rgba(26,25,25,1) 51%);
+    width: 100vw;
+    height: 60vh;
+    border-top: 2px solid #fff;
+    text-align: center;
+    padding-top: 4rem;
+}
+.background h2 {
+    color: rgb(212, 29, 29);
+    font-size: 3.5rem;
+    font-family: 'Bebas Neue', cursive; ;
+}
+
+.background span {
+    color: rgb(240, 229, 229);
+}
+
+.background h3 {
+    color: rgb(241, 227, 227);
+    font-family: 'Jura', sans-serif;
+}
+
+.nlinput {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.nlinput .inputemail {
+    margin-top: 2rem;
+    padding: 1rem;
+    flex: 3;
+    text-align: center;
+    outline-color: rgb(212, 59, 59);
+}
+input[type="submit"] {
+    margin-top: 2rem;
+    flex: 1;
+    padding: 1rem;
+    background:rgb(212, 59, 59) ;
+    color: #fff;
+    cursor: pointer;
+}

@@ -6,6 +6,7 @@
     color: rgb(223, 205, 205);
     padding: 1rem 0;
     background: rgb(34, 33, 33);
+    z-index: 1;
 }
 
 .nav ul {
@@ -17,6 +18,29 @@
 }
 .links {
   display: flex;
+  align-items: center;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.searchbar input {
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    outline: none;
+}
+.links p {
+    margin-left: 5px;
+    color: rgb(216, 43, 21);
+    background: #fff;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-weight: 800;
 }
 
 .links a {
@@ -30,6 +54,14 @@
 .links:hover > .icon {
     animation: icon 1.5s ease;
 }
+
+.searchicon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: rgb(219, 72, 72);
+}
+
 
 @keyframes icon {
     0%{
